@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ServicesService } from './services.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mycart';
+  constructor(private ser:ServicesService){}
+  goTocart(){
+    this.ser.goTocart();
+  }
+  goToOrders(){
+    this.ser.goToOrders();
+  }
 }
