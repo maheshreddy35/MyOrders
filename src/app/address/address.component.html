@@ -1,89 +1,59 @@
-
-<div class="row mt-3 mx-3" style="margin-top:25px ;background-color: #0062CC;">
-    
-    <div class="col-md-3">
-      <div style="margin-top: 50px; margin-left: 10px;" class="text-center">
-        <img src="https://i.pinimg.com/originals/6c/9e/19/6c9e197129299c5af04d8ad1173ad9b9.gif" width="150px" style="border-radius:15px">
-        <h3 class="text-white">Welcome</h3>
-        <p class="white-text">You are 30 seconds away from compleating your order!</p>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn btn-white btn-rounded back-button">Go back</button>
-      </div>
-  
-  
-    </div>
-    <div >
-    <div class="col-md-9 justify-content-center " style="background-color:aliceblue">
-      <div class="card card-custom pb-4">
-        <div class="card-body mt-0 mx-5">
-          <div class="text-center mb-3 pb-2 mt-3">
-            <h4 style="color: #495057 ;">Delivery Details</h4>
-          </div>
-  
-          <form class="mb-0">
-  
-            <div class="row mb-4">
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form9Example1" class="form-control input-custom" />
-                  <label class="form-label" for="form9Example1">First name</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form9Example2" class="form-control input-custom" />
-                  <label class="form-label" for="form9Example2">Last name</label>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form9Example3" class="form-control input-custom" />
-                  <label class="form-label" for="form9Example3">City</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form9Example4" class="form-control input-custom" />
-                  <label class="form-label" for="form9Example4">Zip</label>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form9Example6" class="form-control input-custom" />
-                  <label class="form-label" for="form9Example6">Address</label>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-outline">
-                  <input type="email" id="typeEmail" class="form-control input-custom" />
-                  <label class="form-label" for="typeEmail">Email</label>
-                </div>
-              </div>
-            </div>
-            <h3>Payment Mode</h3>
-            <h4>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                <label class="form-check-label " for="inlineCheckbox1">Cash On Delivery</label>
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                <label class="form-check-label" for="inlineCheckbox2">Pay Now</label>
-              </div>
-            </h4>
-              <hr>
-            <div class="float-end ">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-rounded"
-                style="background-color:#0062CC;" (click)="goToOrders()">Confirm</button>
-            </div>
-  
-          </form>
+<div class="jumbotron" style="border-radius: 15px;background-color:cornflowerblue;">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div>
+        <div style="margin-top: 50px; margin-left: 10px;" class="text-center">
+          <img src="https://i.pinimg.com/originals/6c/9e/19/6c9e197129299c5af04d8ad1173ad9b9.gif" width="150px" style="border-radius:15px">
+          <h3 class="text-white">Welcome</h3>
+          <p class="white-text">You are 30 seconds away from compleating your order!</p>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-white btn-rounded back-button">Go back</button>
         </div>
       </div>
     </div>
+    <div class="col-lg-8">
+      <div style="background-color:aliceblue;border-radius: 55px 1px 55px;">
+        <form class="mb-0" style="margin :25px">
+          <br>
+                <input type="text" id="form9Example1" class="form-control input-custom" />
+                <label class="form-label" for="form9Example1">First name</label>
+           
+                <input type="text" id="form9Example2" class="form-control input-custom" />
+                <label class="form-label" for="form9Example2">Last name</label>
+            
+                <input type="text" id="form9Example3" class="form-control input-custom" />
+                <label class="form-label" for="form9Example3">City</label>
+              
+                <input type="text" id="form9Example4" class="form-control input-custom" />
+                <label class="form-label" for="form9Example4">Zip</label>
+            
+                <input type="text" id="form9Example6" class="form-control input-custom" />
+                <label class="form-label" for="form9Example6">Address</label>
+              
+                <input type="email" id="typeEmail" class="form-control input-custom" />
+                <label class="form-label" for="typeEmail">Email</label>
+             
+          <h3>Payment Mode</h3>
+          <h4>
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+              <label class="form-check-label " for="inlineCheckbox1">Cash On Delivery</label>
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+              <label class="form-check-label" for="inlineCheckbox2">Pay Now</label>
+            </div>
+          </h4>
+            <hr>
+          <div class="float-end ">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-rounded"
+              style="background-color:#0062CC;" (click)="goToOrders()">Confirm</button>
+          </div>
+          <br>
+        </form>
+      </div>
     </div>
   </div>
+  </div>
+</div>
